@@ -24,7 +24,7 @@ function ehPrimo(numero) {
   return true;
 }
 
-// Executar FizzBuzz de 1 a 50
+// 4️ Executar FizzBuzz de 1 a 50
 function fizzBuzz() {
   for (let i = 1; i <= 50; i++) {
     let resultado = (i % 3 === 0 ? "Fizz" : "") + (i % 5 === 0 ? "Buzz" : "");
@@ -62,7 +62,7 @@ function ehPalindromo(texto) {
   return normalizado === invertido;
 }
 
-// 10 Média de Notas
+// 10️ Média de Notas
 function calcularMedia(notas) {
   if (notas.length === 0) return "Reprovado - Média: 0.0";
   const media = somarArray(notas) / notas.length;
@@ -76,31 +76,31 @@ console.log("1️ Imprimir Números Pares até 10");
 imprimirPares(10);
 
 console.log("\n2️ Somar Array [1, 2, 3, 4, 5]");
-console.log(somarArray([1, 2, 3, 4, 5])); // 15
+console.log("Soma:", somarArray([1, 2, 3, 4, 5])); // Esperado: 15
 
 console.log("\n3️ Número Primo - ehPrimo(7), ehPrimo(10)");
-console.log(ehPrimo(7)); // true
-console.log(ehPrimo(10)); // false
+console.log("7 é primo?", ehPrimo(7)); // Esperado: true
+console.log("10 é primo?", ehPrimo(10)); // Esperado: false
 
 console.log("\n4️ Executar FizzBuzz de 1 a 50");
 fizzBuzz();
 
 console.log('\n5️ Contar Vogais em "Node.js é incrível"');
-console.log(contarVogais("Node.js é incrível")); // 6
+console.log("Vogais:", contarVogais("Node.js é incrível")); // Esperado: 6
 
 console.log("\n6️ Tabuada do 5");
 tabuada(5);
 
 console.log('\n7️ Inverter String "hello"');
-console.log(inverterString("hello")); // "olleh"
+console.log("String invertida:", inverterString("hello")); // Esperado: "olleh"
 
 console.log("\n8️ Encontrar Maior Número em [3, 10, 6, 2]");
-console.log(encontrarMaiorNumero([3, 10, 6, 2])); // 10
+console.log("Maior número:", encontrarMaiorNumero([3, 10, 6, 2])); // Esperado: 10
 
 console.log('\n9️ Verificar Palíndromo - "Ame a ema", "Olá mundo"');
-console.log(ehPalindromo("Ame a ema")); // true
-console.log(ehPalindromo("Olá mundo")); // false
+console.log("É palíndromo?", ehPalindromo("Ame a ema")); // Esperado: true
+console.log("É palíndromo?", ehPalindromo("Olá mundo")); // Esperado: false
 
 console.log("\n10️ Calcular Média das Notas [8, 7, 6], [5, 6, 4]");
-console.log(calcularMedia([8, 7, 6])); // "Aprovado - Média: 7.0"
-console.log(calcularMedia([5, 6, 4])); // "Reprovado - Média: 5.0"
+console.log(calcularMedia([8, 7, 6])); // Esperado: "Aprovado - Média: 7.0"
+console.log(calcularMedia([5, 6, 4])); // Esperado: "Reprovado - Média: 5.0"
